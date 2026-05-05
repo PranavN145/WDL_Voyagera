@@ -1,28 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOYEGERA-HOME PAGE</title>
-    <link rel="stylesheet" href="../css/home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voyagera — Discover the World Differently</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/home.css" />
 </head>
+
 <body>
 
-    <nav class=""navbar>
-        <a href="#" class="logo">VOYEGERA</a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Feedback</a></li>
-            </ul>
-        </div>
-    </nav>
-    <header>
+  <!-- ═══════════════════════════════════════ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <a class="nav-logo" href="#">
+      <img src="../images/b_logo.png" alt="Voyagera" onerror="this.style.display='none'" />
+      <span>VOYAGERA</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+      <li><a href="#map-section" class="nav-link" data-section="map-section" data-scroll="#map-section">Explore</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="#" class="nav-link">Contact</a></li>
+      <li><a href="#" class="nav-link">Feedback</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    </header>
-    
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero">Home</a>
+    <a href="#map-section">Explore</a>
+    <a href="#vibe">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Feedback</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════ HERO ═══ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=80" alt="" class="hero-bg-img" />
+      <div class="hero-bg-overlay"></div>
+    </div>
+    <div class="hero-grain" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <p class="hero-eyebrow">
+          <span class="eline"></span>
+          See more than destinations
+          <span class="eline"></span>
+        </p>
+        <h1 class="hero-title">
+          <span class="ht-row">VOYAGERA</span>
+        </h1>
+        <p class="hero-subtitle">Discover the world differently</p>
+        <div class="hero-ctas">
+          <button class="btn-primary" data-scroll="#vibe">
+            <span>Choose Your Journey</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+          </button>
+          <a href="#map-section" class="btn-ghost">Explore Map →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><strong>190+</strong><span>Countries</span></div>
+          <div class="hstat-sep"></div>
+          <div class="hstat"><strong>8</strong><span>Regions</span></div>
+          <div class="hstat-sep"></div>
+          <div class="hstat"><strong>∞</strong><span>Stories</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: floating cards -->
+      <div class="hero-right" aria-hidden="true">
+        <div class="card-stack">
+          <div class="fcard fcard-back">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=420&q=75" alt="Beach" />
+            <span class="fcard-tag">Beaches</span>
+          </div>
+          <div class="fcard fcard-mid">
+            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=420&q=75" alt="City" />
+            <span class="fcard-tag">Cities</span>
+          </div>
+          <div class="fcard fcard-front">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=420&q=75" alt="Mountains" />
+            <span class="fcard-tag">Mountains</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════ VIBE ═══ -->
+  <section id="vibe" class="section vibe-section">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Explore by Experience</span>
+      <h2 class="sec-title">Find Your Vibe</h2>
+      <p class="sec-desc">Every journey is shaped by what moves you — pick your escape.</p>
+    </div>
+
+    <div class="vibe-grid">
+      <article class="vibe-card reveal rd1" data-vibe="mountains" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=70" alt="Mountains"
+          class="vc-img" loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🏔️</div>
+          <h3 class="vc-name">Mountains</h3>
+          <p class="vc-sub">Alpine · Trekking · Solitude</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+
+      <article class="vibe-card reveal rd2" data-vibe="beaches" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=70" alt="Beaches" class="vc-img"
+          loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🏖️</div>
+          <h3 class="vc-name">Beaches</h3>
+          <p class="vc-sub">Coastal · Tropical · Relaxation</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+
+      <article class="vibe-card reveal rd3" data-vibe="cities" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=700&q=70" alt="Cities" class="vc-img"
+          loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🌆</div>
+          <h3 class="vc-name">Cities</h3>
+          <p class="vc-sub">Urban · Nightlife · Architecture</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+
+      <article class="vibe-card reveal rd4" data-vibe="nature" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=70" alt="Nature" class="vc-img"
+          loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🌿</div>
+          <h3 class="vc-name">Nature</h3>
+          <p class="vc-sub">Wilderness · Fauna · Forests</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+
+      <article class="vibe-card reveal rd5" data-vibe="culture" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?w=700&q=70" alt="Culture" class="vc-img"
+          loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🏛️</div>
+          <h3 class="vc-name">Culture</h3>
+          <p class="vc-sub">Heritage · Art · History</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+
+      <article class="vibe-card reveal rd6" data-vibe="food" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=70" alt="Food" class="vc-img"
+          loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🍜</div>
+          <h3 class="vc-name">Food</h3>
+          <p class="vc-sub">Cuisine · Street Food · Flavors</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════ MAP ═══ -->
+  <section id="map-section" class="section map-section">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Interactive Atlas</span>
+      <h2 class="sec-title">Explore the World</h2>
+      <p class="sec-desc">Hover a region to preview. Click to select your next destination.</p>
+    </div>
+
+    <div class="map-wrap reveal">
+
+      <!-- D3 TopoJSON map container — filled by home.js -->
+      <div id="d3-map-container"></div>
+
+      <!-- Voyagera-styled tooltip (positioned by JS) -->
+      <div class="map-tooltip" id="mapTooltip" aria-hidden="true">
+        <div class="mtt-inner">
+          <span class="mtt-dot" id="mttDot"></span>
+          <span class="mtt-name" id="mttName">—</span>
+        </div>
+      </div>
+
+      <div class="map-footer-bar">
+        <div class="mfb-left">
+          <div class="pulse-ring">
+            <div class="pulse-core"></div>
+          </div>
+          <span class="mfb-text" id="regionText">Hover a region to explore</span>
+        </div>
+        <span class="mfb-hint">8 regions · click to select</span>
+      </div>
+    </div><!-- .map-wrap -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="" onerror="this.style.display='none'" />
+        <span>VOYAGERA</span>
+      </div>
+      <p class="footer-copy">VOYAGERA &copy; 2026 — Discover the world differently</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+  <script src="../javascript/home.js"></script>
 </body>
+
 </html>
