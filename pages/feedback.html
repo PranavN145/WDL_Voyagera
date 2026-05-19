@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback — Voyagera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet" />
+    <!-- Base design system — same as homepage -->
+    <link rel="stylesheet" href="../css/home.css" />
+    <!-- Feedback-page styles -->
+    <link rel="stylesheet" href="../css/feedback.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════ NAVBAR ═══ -->
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="../index.html">
+            <img src="../images/b_logo.png" alt="Voyagera" onerror="this.style.display='none'" />
+            <span>VOYAGERA</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html" class="nav-link" data-section="hero">Home</a></li>
+            <li><a href="../index.html#map-section" class="nav-link">Explore</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="couchsurfing.html" class="nav-link">CouchSurfing</a></li>
+            <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+        <a href="#map-section" class="nav-link" data-section="map-section" data-scroll="#map-section">Explore</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="couchsurfing.html" class="nav-link">CouchSurfing</a>
+        <a href="feedback.html" class="nav-link">Feedback</a>
+      </div>
+
+
+    <!-- ═══════════════════════════════════════ HERO ═══ -->
+    <section class="fb-hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1800&q=80" alt=""
+                class="hero-bg-img" />
+            <div class="hero-bg-overlay fb-hero-overlay"></div>
+        </div>
+        <div class="hero-grain" aria-hidden="true"></div>
+
+        <div class="fb-hero-inner">
+            <span class="sec-tag">Feedback</span>
+            <h1 class="fb-hero-title">Share Your<br>Journey</h1>
+            <p class="fb-hero-sub">Every experience leaves behind a story. Tell us yours.</p>
+        </div>
+
+        <div class="hero-scroll-cue" aria-hidden="true">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ MAIN ═══ -->
+    <main class="fb-main">
+
+        <!-- ─── STEP 01 : MOOD ─── -->
+        <section class="fb-section" id="fb-mood">
+            <div class="fb-sec-head reveal">
+                <span class="sec-tag">Step 01</span>
+                <h2 class="sec-title">How did VOYAGERA<br>make you feel?</h2>
+                <p class="sec-desc">Choose the mood that best describes your experience.</p>
+            </div>
+
+            <div class="mood-grid">
+                <div class="mood-card reveal rd1" data-mood="Inspiring" tabindex="0" role="button" aria-pressed="false">
+                    <div class="mc-emoji" aria-hidden="true">🌄</div>
+                    <div class="mc-name">Inspiring</div>
+                    <div class="mc-check" aria-hidden="true">✓</div>
+                    <div class="mc-glow"></div>
+                </div>
+                <div class="mood-card reveal rd2" data-mood="Adventurous" tabindex="0" role="button"
+                    aria-pressed="false">
+                    <div class="mc-emoji" aria-hidden="true">🌍</div>
+                    <div class="mc-name">Adventurous</div>
+                    <div class="mc-check" aria-hidden="true">✓</div>
+                    <div class="mc-glow"></div>
+                </div>
+                <div class="mood-card reveal rd3" data-mood="Relaxing" tabindex="0" role="button" aria-pressed="false">
+                    <div class="mc-emoji" aria-hidden="true">😌</div>
+                    <div class="mc-name">Relaxing</div>
+                    <div class="mc-check" aria-hidden="true">✓</div>
+                    <div class="mc-glow"></div>
+                </div>
+                <div class="mood-card reveal rd4" data-mood="Meaningful" tabindex="0" role="button"
+                    aria-pressed="false">
+                    <div class="mc-emoji" aria-hidden="true">🤝</div>
+                    <div class="mc-name">Meaningful</div>
+                    <div class="mc-check" aria-hidden="true">✓</div>
+                    <div class="mc-glow"></div>
+                </div>
+                <div class="mood-card reveal rd5" data-mood="Backpacker Vibes" tabindex="0" role="button"
+                    aria-pressed="false">
+                    <div class="mc-emoji" aria-hidden="true">🎒</div>
+                    <div class="mc-name">Backpacker<br>Vibes</div>
+                    <div class="mc-check" aria-hidden="true">✓</div>
+                    <div class="mc-glow"></div>
+                </div>
+            </div>
+            <p class="fb-error" id="moodError" aria-live="polite">Please select a mood to continue.</p>
+        </section>
+
+
+        <!-- ─── STEP 02 : RATING ─── -->
+        <section class="fb-section fb-rating-section" id="fb-rating">
+            <div class="fb-sec-head reveal">
+                <span class="sec-tag">Step 02</span>
+                <h2 class="sec-title">Rate Your Journey</h2>
+                <p class="sec-desc">How would you rate your overall experience with VOYAGERA?</p>
+            </div>
+
+            <div class="star-wrap reveal">
+                <div class="star-row" id="starRow" role="group" aria-label="Rating">
+                    <span class="star" data-val="1" tabindex="0" role="button" aria-label="1 star">★</span>
+                    <span class="star" data-val="2" tabindex="0" role="button" aria-label="2 stars">★</span>
+                    <span class="star" data-val="3" tabindex="0" role="button" aria-label="3 stars">★</span>
+                    <span class="star" data-val="4" tabindex="0" role="button" aria-label="4 stars">★</span>
+                    <span class="star" data-val="5" tabindex="0" role="button" aria-label="5 stars">★</span>
+                </div>
+                <p class="star-label" id="starLabel">Tap a star to rate</p>
+            </div>
+            <p class="fb-error" id="ratingError" aria-live="polite">Please rate your journey before submitting.</p>
+        </section>
+
+
+        <!-- ─── STEP 03 : STORY ─── -->
+        <section class="fb-section fb-story-section" id="fb-story">
+            <div class="fb-sec-head reveal">
+                <span class="sec-tag">Step 03</span>
+                <h2 class="sec-title">Your Story</h2>
+                <p class="sec-desc">Tell us about your experience — no filter needed.</p>
+            </div>
+
+            <div class="fb-fields reveal">
+
+                <div class="fb-field">
+                    <label class="fb-label" for="inspiration">
+                        What part of VOYAGERA inspired you the most?
+                    </label>
+                    <textarea class="fb-textarea" id="inspiration" rows="5"
+                        placeholder="The cinematic map, the backpacker stories, a hidden gem you discovered..."></textarea>
+                </div>
+
+                <div class="fb-field">
+                    <label class="fb-label" for="improvement">
+                        What can improve your next journey?
+                    </label>
+                    <textarea class="fb-textarea" id="improvement" rows="5"
+                        placeholder="More countries, better mobile experience, offline mode..."></textarea>
+                </div>
+
+                <div class="fb-field fb-field-half">
+                    <label class="fb-label" for="traveler">
+                        Traveler Name <span class="fb-optional">(optional)</span>
+                    </label>
+                    <input class="fb-input" type="text" id="traveler" placeholder="Your name or trail alias"
+                        autocomplete="off" />
+                </div>
+
+                <div class="fb-field fb-field-half">
+                    <label class="fb-label" for="email">
+                        Email Address <span class="fb-optional">(optional)</span>
+                    </label>
+                    <input class="fb-input" type="email" id="email" placeholder="you@example.com"
+                        autocomplete="email" />
+                    <span class="fb-email-hint">We'll never share your email or spam you.</span>
+                </div>
+
+            </div>
+
+            <p class="fb-error" id="storyError" aria-live="polite">Please fill at least one experience field.</p>
+
+            <div class="fb-submit reveal">
+                <button class="btn-primary fb-submit-btn" id="submitBtn" type="button">
+                    <span>Submit Journey</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        aria-hidden="true">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </button>
+                <p class="fb-note">Submitted securely · used only to improve VOYAGERA</p>
+            </div>
+        </section>
+
+    </main><!-- /fb-main -->
+
+
+    <!-- ═══════════════════════════════════════ SUCCESS ═══ -->
+    <div class="success-overlay" id="successOverlay" aria-hidden="true" aria-modal="true" role="dialog">
+        <div class="success-card">
+            <div class="success-icon" aria-hidden="true">✦</div>
+            <h2 class="success-title">Journey Shared</h2>
+            <p class="success-msg">
+                Thank you for sharing your journey with VOYAGERA.<br>
+                Every story makes the atlas richer.
+            </p>
+            <a href="home.html" class="btn-ghost success-link">Return to Map →</a>
+        </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="../images/b_logo.png" alt="" onerror="this.style.display='none'" />
+                <span>VOYAGERA</span>
+            </div>
+            <p class="footer-copy">VOYAGERA &copy; 2026 — Discover the world differently</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../javascript/feedback.js"></script>
+</body>
+
+</html>
