@@ -487,6 +487,12 @@ function voyScroll(selector, offset = 68) {
       }
     }
 
+    const REGION_PAGES = {
+      'Asia': 'asia.html',
+      // add more as you build them:
+      // 'Europe': 'pages/europe.html',
+    };
+
     function onClick(event, rName) {
       if (selectedRegion === rName) {
         /* Deselect */
@@ -505,6 +511,7 @@ function voyScroll(selector, offset = 68) {
           regionText.classList.add('active');
         }
         console.log(`🌍 Region selected: ${rName}`);
+        if (REGION_PAGES[rName]) window.location.href = REGION_PAGES[rName];
       }
     }
   }

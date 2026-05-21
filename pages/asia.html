@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asia — Voyagera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet" />
+    <!-- Base design system -->
+    <link rel="stylesheet" href="../css/home.css" />
+    <!-- Asia page styles -->
+    <link rel="stylesheet" href="../css/asia.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════ NAVBAR ═══ -->
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="../index.html">
+            <img src="../images/b_logo.png" alt="Voyagera" onerror="this.style.display='none'" />
+            <span>VOYAGERA</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="home.html#map-section" class="nav-link active">Explore</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="couchsurfing.html" class="nav-link">CouchSurfing</a></li>
+            <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#map-section">Explore</a>
+        <a href="about.html">About</a>
+        <a href="couchsurfing.html">CouchSurfing</a>
+        <a href="feedback.html">Feedback</a>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════ HERO ═══ -->
+    <section id="asia-hero" class="asia-hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?w=1800&q=80" alt="Asia"
+                class="hero-bg-img" />
+            <div class="hero-bg-overlay asia-hero-overlay"></div>
+        </div>
+        <div class="hero-grain" aria-hidden="true"></div>
+
+        <div class="asia-hero-inner">
+            <span class="sec-tag asia-hero-tag">Continent</span>
+            <h1 class="asia-hero-title">ASIA</h1>
+            <p class="asia-hero-sub">
+                From neon cities to silent temples —<br>
+                Asia is meant to be experienced, not just visited.
+            </p>
+            <div class="asia-hero-ctas">
+                <button class="btn-primary" data-scroll="#countries-section">
+                    <span>Explore Countries</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        aria-hidden="true">
+                        <path d="M12 5v14M5 12l7 7 7-7" />
+                    </svg>
+                </button>
+                <button class="btn-ghost asia-ghost" data-scroll="#asia-map-section">
+                    Start Journey →
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-scroll-cue" aria-hidden="true">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ BACKPACKER ═══ -->
+    <section id="backpacker" class="section asia-bp-section">
+        <div class="sec-head reveal">
+            <span class="sec-tag">Backpacker's Perspective</span>
+            <h2 class="sec-title">Why Backpackers<br>Love Asia</h2>
+            <p class="sec-desc">Four reasons why every wanderer finds their way back.</p>
+        </div>
+
+        <div class="bp-grid">
+
+            <article class="vibe-card reveal rd1">
+                <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=700&q=70"
+                    alt="Affordable Adventures" class="vc-img" loading="lazy" />
+                <div class="vc-overlay"></div>
+                <div class="vc-body">
+                    <div class="vc-icon">💰</div>
+                    <h3 class="vc-name">Affordable Adventures</h3>
+                    <p class="vc-sub">Budget travel · Hostels · Markets</p>
+                </div>
+                <div class="vc-shine"></div>
+            </article>
+
+            <article class="vibe-card reveal rd2">
+                <img src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=700&q=70"
+                    alt="Street Food Culture" class="vc-img" loading="lazy" />
+                <div class="vc-overlay"></div>
+                <div class="vc-body">
+                    <div class="vc-icon">🍜</div>
+                    <h3 class="vc-name">Street Food Culture</h3>
+                    <p class="vc-sub">Night markets · Local kitchens · Flavors</p>
+                </div>
+                <div class="vc-shine"></div>
+            </article>
+
+            <article class="vibe-card reveal rd3">
+                <img src="../images/varanasi.jpg" alt="Spiritual Diversity" class="vc-img" loading="lazy" />
+                <div class="vc-overlay"></div>
+                <div class="vc-body">
+                    <div class="vc-icon">🕌</div>
+                    <h3 class="vc-name">Spiritual Diversity</h3>
+                    <p class="vc-sub">Temples · Rituals · Ancient wisdom</p>
+                </div>
+                <div class="vc-shine"></div>
+            </article>
+
+            <article class="vibe-card reveal rd4">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=70"
+                    alt="Endless Exploration" class="vc-img" loading="lazy" />
+                <div class="vc-overlay"></div>
+                <div class="vc-body">
+                    <div class="vc-icon">🗺️</div>
+                    <h3 class="vc-name">Endless Exploration</h3>
+                    <p class="vc-sub">Mountains · Jungles · Hidden villages</p>
+                </div>
+                <div class="vc-shine"></div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ COUNTRY CARDS ═══ -->
+    <section id="countries-section" class="section asia-countries-section">
+        <div class="sec-head sec-head-center reveal">
+            <span class="sec-tag">Choose Your Journey</span>
+            <h2 class="sec-title">Every Country Tells<br>a Different Story</h2>
+            <p class="sec-desc">Five destinations. Five entirely different worlds.</p>
+        </div>
+
+        <div class="country-grid">
+
+            <!-- India -->
+            <article class="country-card reveal rd1" data-country="india" tabindex="0" role="button"
+                aria-label="Explore India">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=700&q=70" alt="India"
+                    class="vc-img" loading="lazy" />
+                <div class="vc-overlay country-overlay"></div>
+                <div class="cc-body">
+                    <div class="cc-flag" aria-hidden="true">🇮🇳</div>
+                    <h3 class="cc-name">India</h3>
+                    <p class="cc-tagline">"Chaos, spirituality,<br>and endless stories."</p>
+                    <div class="cc-tags">
+                        <span>Culture</span><span>Spirituality</span><span>Diversity</span>
+                    </div>
+                </div>
+                <div class="vc-shine"></div>
+            </article>
+
+            <!-- Japan -->
+            <article class="country-card reveal rd2" data-country="japan" tabindex="0" role="button"
+                aria-label="Explore Japan">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=700&q=70" alt="Japan"
+                    class="vc-img" loading="lazy" />
+                <div class="vc-overlay country-overlay"></div>
+                <div class="cc-body">
+                    <div class="cc-flag" aria-hidden="true">🇯🇵</div>
+                    <h3 class="cc-name">Japan</h3>
+                    <p class="cc-tagline">"Tradition meets<br>the future."</p>
+                    <div class="cc-tags">
+                        <span>Culture</span><span>Neon</span><span>Food</span>
+                    </div>
+                </div>
+                <div class="vc-shine"></div>
+            </article>
+
+            <!-- Kazakhstan -->
+            <article class="country-card reveal rd3" data-country="kazakhstan" tabindex="0" role="button"
+                aria-label="Explore Kazakhstan">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=700&q=70" alt="Kazakhstan"
+                    class="vc-img" loading="lazy" />
+                <div class="vc-overlay country-overlay"></div>
+                <div class="cc-body">
+                    <div class="cc-flag" aria-hidden="true">🇰🇿</div>
+                    <h3 class="cc-name">Kazakhstan</h3>
+                    <p class="cc-tagline">"Vast steppes, ancient<br>Silk Road tales."</p>
+                    <div class="cc-tags">
+                        <span>Adventure</span><span>Nomad</span><span>Wilderness</span>
+                    </div>
+                </div>
+                <div class="vc-shine"></div>
+            </article>
+
+            <!-- Indonesia -->
+            <article class="country-card reveal rd4" data-country="indonesia" tabindex="0" role="button"
+                aria-label="Explore Indonesia">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&q=70" alt="Indonesia"
+                    class="vc-img" loading="lazy" />
+                <div class="vc-overlay country-overlay"></div>
+                <div class="cc-body">
+                    <div class="cc-flag" aria-hidden="true">🇮🇩</div>
+                    <h3 class="cc-name">Indonesia</h3>
+                    <p class="cc-tagline">"17,000 islands,<br>one endless adventure."</p>
+                    <div class="cc-tags">
+                        <span>Islands</span><span>Nature</span><span>Culture</span>
+                    </div>
+                </div>
+                <div class="vc-shine"></div>
+            </article>
+
+            <!-- Thailand -->
+            <article class="country-card reveal rd5" data-country="thailand" tabindex="0" role="button"
+                aria-label="Explore Thailand">
+                <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=70" alt="Thailand"
+                    class="vc-img" loading="lazy" />
+                <div class="vc-overlay country-overlay"></div>
+                <div class="cc-body">
+                    <div class="cc-flag" aria-hidden="true">🇹🇭</div>
+                    <h3 class="cc-name">Thailand</h3>
+                    <p class="cc-tagline">"Street food, temples,<br>and backpacker energy."</p>
+                    <div class="cc-tags">
+                        <span>Food</span><span>Temples</span><span>Islands</span>
+                    </div>
+                </div>
+                <div class="vc-shine"></div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ MAP ═══ -->
+    <section id="asia-map-section" class="section map-section">
+        <div class="sec-head reveal">
+            <span class="sec-tag">Interactive Map</span>
+            <h2 class="sec-title">Navigate Asia</h2>
+            <p class="sec-desc">Hover to discover. Click a country to enter its story.</p>
+        </div>
+
+        <div class="map-wrap reveal">
+
+            <!-- D3 Asia map renders here -->
+            <div id="asia-map-container"></div>
+
+            <!-- Tooltip — reuses homepage tooltip classes -->
+            <div class="map-tooltip" id="asiaTooltip" aria-hidden="true">
+                <div class="mtt-inner">
+                    <span class="mtt-dot"></span>
+                    <div class="mtt-content">
+                        <span class="mtt-name" id="asiaMttName">—</span>
+                        <span class="mtt-sub" id="asiaMttSub"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-footer-bar">
+                <div class="mfb-left">
+                    <div class="pulse-ring">
+                        <div class="pulse-core"></div>
+                    </div>
+                    <span class="mfb-text" id="asiaRegionText">Hover a country to explore</span>
+                </div>
+                <span class="mfb-hint">5 countries · click to enter</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ CTA ═══ -->
+    <section id="asia-cta" class="asia-cta-section">
+        <div class="asia-cta-inner reveal">
+            <span class="asia-cta-eyebrow">Begin Your Journey</span>
+            <h2 class="asia-cta-title">
+                Asia isn't one journey.<br>
+                It's thousands of stories<br>
+                waiting to be lived.
+            </h2>
+            <a href="../index.html#map-section" class="btn-primary asia-cta-btn">
+                <span>Continue Exploring</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="../images/b_logo.png" alt="" onerror="this.style.display='none'" />
+                <span>VOYAGERA</span>
+            </div>
+            <p class="footer-copy">VOYAGERA &copy; 2026 — Discover the world differently</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+    <script src="../javascript/asia.js"></script>
+</body>
+
+</html>

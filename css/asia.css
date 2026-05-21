@@ -1,0 +1,414 @@
+/*
+ * asia.css — VOYAGERA Asia Continent Page
+ * Extends home.css — DO NOT import home.css here; loaded separately in asia.html
+ * All CSS variables (--bg, --cyan, --text, --ff-display etc.) come from home.css :root
+ * Place at: /css/asia.css
+ */
+
+
+/* ═══════════════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════════════ */
+.asia-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Centred radial overlay — replaces homepage's left-biased gradient */
+  .asia-hero-overlay {
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(7,9,15,0.25) 0%, rgba(7,9,15,0.78) 65%),
+      linear-gradient(to bottom, rgba(7,9,15,0.30) 0%, rgba(7,9,15,0.96) 100%) !important;
+  }
+  
+  .asia-hero-inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* top: 68px navbar clearance | bottom: 7rem clears the scroll-cue at bottom:2rem */
+    padding: 68px 5vw 7rem;
+    max-width: 960px;
+  }
+  
+  /* Eyebrow tag — uses .sec-tag from home.css, add entrance animation */
+  .asia-hero-tag {
+    opacity: 0;
+    animation: fadeUp 0.8s 0.25s cubic-bezier(0.4,0,0.2,1) forwards;
+  }
+  
+  /* ── ASIA title — intentionally massive ── */
+  .asia-hero-title {
+    font-family: var(--ff-display);
+    font-size: clamp(9rem, 22vw, 20rem);
+    line-height: 0.82;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: linear-gradient(140deg, #e9ecf3 0%, #9db5d8 50%, #3a6fbe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0.5rem 0 1.4rem;
+    opacity: 0;
+    animation: asiaTitle 1.1s 0.42s cubic-bezier(0.16,1,0.3,1) forwards;
+  }
+  
+  @keyframes asiaTitle {
+    from { opacity: 0; transform: translateY(48px) scaleY(0.88); filter: blur(6px); }
+    to   { opacity: 1; transform: translateY(0)   scaleY(1);    filter: blur(0);   }
+  }
+  
+  .asia-hero-sub {
+    font-family: var(--ff-body);
+    font-weight: 300;
+    font-size: clamp(0.95rem, 1.55vw, 1.12rem);
+    color: var(--text2);
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+    max-width: 580px;
+    margin-bottom: 2.6rem;
+    opacity: 0;
+    animation: fadeUp 0.85s 0.72s cubic-bezier(0.4,0,0.2,1) forwards;
+  }
+  
+  .asia-hero-ctas {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeUp 0.85s 0.88s cubic-bezier(0.4,0,0.2,1) forwards;
+  }
+  
+  /* Ghost button needs cursor since home.css button reset sets cursor:pointer on <button> only */
+  .asia-ghost {
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  
+  /* ═══════════════════════════════════════════════════════
+     BACKPACKER SECTION
+  ═══════════════════════════════════════════════════════ */
+  .asia-bp-section {
+    background: var(--bg2);
+  }
+  
+  /* 4-column grid — vibe-card styles come from home.css */
+  .bp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  
+  /* Slightly taller than homepage vibe-cards */
+  .asia-bp-section .vibe-card {
+    height: 340px;
+    /* ── Remove all clickable signals ── */
+    cursor: default;
+    pointer-events: none;   /* disables hover transform, glow, image zoom */
+  }
+  
+  /* Belt-and-suspenders: explicitly flatten every hover state */
+  .asia-bp-section .vibe-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .asia-bp-section .vibe-card:hover .vc-img    { transform: none; }
+  .asia-bp-section .vibe-card:hover .vc-body   { transform: translateY(4px); }
+  .asia-bp-section .vibe-card:hover .vc-shine  { border-color: transparent; box-shadow: none; }
+  .asia-bp-section .vibe-card:hover .vc-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(5,7,14,0.90) 0%,
+      rgba(5,7,14,0.35) 55%,
+      rgba(5,7,14,0.08) 100%
+    );
+  }
+  
+  
+  /* ═══════════════════════════════════════════════════════
+     COUNTRY CARDS
+  ═══════════════════════════════════════════════════════ */
+  .asia-countries-section {
+    background: var(--bg);
+  }
+  
+  /* Centre the section heading for this full-width grid layout */
+  .sec-head-center {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  
+  /* 5-column grid */
+  .country-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  
+  /* Base card — reuses vc-img / vc-shine / vc-overlay from home.css */
+  .country-card {
+    position: relative;
+    height: 440px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
+  }
+  
+  .country-card:hover {
+    transform: translateY(-8px) scale(1.015);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.65);
+  }
+  
+  /* Deeper gradient than vibe-card for better text legibility */
+  .country-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(5,7,14,0.98) 0%,
+      rgba(5,7,14,0.60) 42%,
+      rgba(5,7,14,0.08) 100%
+    );
+    transition: background var(--t);
+  }
+  .country-card:hover .country-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(5,7,14,1)    0%,
+      rgba(5,7,14,0.70) 50%,
+      rgba(5,7,14,0.12) 100%
+    );
+  }
+  
+  /* Shine border — from home.css .vc-shine, override colours for country cards */
+  .country-card:hover .vc-shine {
+    border-color: rgba(0,200,255,0.28);
+    box-shadow:
+      inset 0 0 40px rgba(0,200,255,0.07),
+      0 28px 65px rgba(0,0,0,0.55);
+  }
+  
+  /* Card body — positioned at bottom */
+  .cc-body {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 18px 18px 22px;
+    z-index: 2;
+    transform: translateY(8px);
+    transition: transform var(--t) var(--ease);
+  }
+  .country-card:hover .cc-body {
+    transform: translateY(0);
+  }
+  
+  .cc-flag {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  
+  .cc-name {
+    font-family: var(--ff-display);
+    font-size: 1.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  
+  .cc-tagline {
+    font-family: var(--ff-body);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.76rem;
+    color: rgba(255,255,255,0.58);
+    line-height: 1.45;
+    margin-bottom: 10px;
+  }
+  
+  .cc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .cc-tags span {
+    font-family: var(--ff-cond);
+    font-size: 0.60rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(0,200,255,0.80);
+    background: rgba(0,200,255,0.10);
+    border: 1px solid rgba(0,200,255,0.18);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+  
+  
+  /* ═══════════════════════════════════════════════════════
+     ASIA MAP — map-section, map-wrap, map-footer-bar from home.css
+  ═══════════════════════════════════════════════════════ */
+  
+  /* D3 container */
+  #asia-map-container {
+    position: relative;
+    width: 100%;
+    line-height: 0;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
+  #asia-map-container svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+  }
+  
+  /* Asia tooltip — inherits .map-tooltip from home.css D3 additions (display:none / d3-tt-visible) */
+  #asiaTooltip {
+    display: none;
+    pointer-events: none;
+    z-index: 80;
+  }
+  
+  #asiaTooltip.d3-tt-visible {
+    display: block;
+  }
+  
+  /* Two-line tooltip content layout */
+  .mtt-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .mtt-sub {
+    font-family: var(--ff-cond);
+    font-size: 0.64rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text2);
+    white-space: nowrap;
+  }
+  
+  
+  /* ═══════════════════════════════════════════════════════
+     FINAL CTA
+  ═══════════════════════════════════════════════════════ */
+  .asia-cta-section {
+    background: var(--bg2);
+    padding: 140px 5vw 150px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Ambient centre glow */
+  .asia-cta-section::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; height: 500px;
+    background: radial-gradient(ellipse,
+      rgba(0,200,255,0.055) 0%,
+      transparent 68%);
+    pointer-events: none;
+  }
+  
+  .asia-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  
+  .asia-cta-eyebrow {
+    display: block;
+    font-family: var(--ff-cond);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 1.6rem;
+  }
+  
+  .asia-cta-title {
+    font-family: var(--ff-display);
+    font-size: clamp(2.5rem, 5.5vw, 5rem);
+    line-height: 1.02;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text);
+    margin-bottom: 3.2rem;
+  }
+  
+  /* btn-primary comes from home.css — only add padding override */
+  .asia-cta-btn {
+    padding: 15px 42px;
+    font-size: 0.88rem;
+  }
+  
+  
+  /* ═══════════════════════════════════════════════════════
+     RESPONSIVE
+  ═══════════════════════════════════════════════════════ */
+  
+  /* Tablet */
+  @media (max-width: 1100px) {
+    .country-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    /* Last 2 cards: span 1.5 cols each to appear centred */
+    .country-card:nth-child(4) { grid-column: 1 / 2; }
+    .country-card:nth-child(5) { grid-column: 2 / 3; }
+  }
+  
+  @media (max-width: 900px) {
+    .bp-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .asia-bp-section .vibe-card { height: 280px; }
+  
+    .country-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .country-card { height: 380px; }
+    /* Reset nth-child overrides */
+    .country-card:nth-child(4) { grid-column: auto; }
+    .country-card:nth-child(5) { grid-column: auto; }
+  }
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+    .asia-hero-title { letter-spacing: 0.04em; }
+  
+    .bp-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .asia-bp-section .vibe-card { height: 240px; }
+  
+    .country-grid { grid-template-columns: 1fr; gap: 12px; }
+    .country-card { height: 320px; }
+  
+    .asia-cta-section { padding: 90px 5vw 100px; }
+  
+    .asia-hero-ctas { flex-direction: column; align-items: center; gap: 1rem; }
+  }
