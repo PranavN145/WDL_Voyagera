@@ -46,7 +46,7 @@
   /* ── ASIA title — intentionally massive ── */
   .asia-hero-title {
     font-family: var(--ff-display);
-    font-size: clamp(9rem, 17vw, 20rem);
+    font-size: clamp(9rem, 12vw, 20rem);
     line-height: 0.82;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -150,10 +150,12 @@
   }
   
   /* 5-column grid */
-  .country-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
+  .country-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 320px);
+    justify-content:center;
+    gap:20px;
+    width:100%;
   }
   
   /* Base card — reuses vc-img / vc-shine / vc-overlay from home.css */

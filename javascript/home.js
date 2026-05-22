@@ -489,8 +489,13 @@ function voyScroll(selector, offset = 68) {
 
     const REGION_PAGES = {
       'Asia': 'asia.html',
-      // add more as you build them:
-      // 'Europe': 'pages/europe.html',
+      'Africa': 'africa.html',
+      'Europe': 'europe.html',
+      'South America': 's_america.html',
+      'North America': 'n_america.html',
+      'Central America': 'c_america.html',
+      'Oceania': 'oceania.html',
+      'Middle East': 'middle_east.html',
     };
 
     function onClick(event, rName) {

@@ -46,7 +46,7 @@
   /* ── ASIA title — intentionally massive ── */
   .asia-hero-title {
     font-family: var(--ff-display);
-    font-size: clamp(9rem, 17vw, 20rem);
+    font-size: clamp(9rem, 15vw, 20rem);
     line-height: 0.82;
     letter-spacing: 0.06em;
     text-transform: uppercase;
