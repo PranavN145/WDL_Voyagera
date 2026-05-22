@@ -185,6 +185,48 @@ function voyScroll(selector, offset = 68) {
   });
 })();
 
+/* ── Vibe Card Navigation ── */
+(function initVibeCards(){
+
+  const vibeRoutes = {
+
+    mountains : 'mountains.html',
+    beaches   : 'beaches.html',
+    cities    : 'cities.html',
+    nature    : 'nature.html',
+    culture   : 'culture.html',
+    food      : 'food.html'
+
+  };
+
+  document.querySelectorAll('.vibe-card').forEach(card => {
+
+    const go = () => {
+
+      const route = vibeRoutes[card.dataset.vibe];
+
+      if(route){
+        window.location.href = route;
+      }
+    };
+
+    card.addEventListener('click', go);
+
+    card.addEventListener('keydown', (e) => {
+
+      if(e.key === 'Enter' || e.key === ' '){
+
+        e.preventDefault();
+
+        go();
+      }
+
+    });
+
+  });
+
+})();
+
 
 /* ═══════════════════════════════════════════════════════
    D3 WORLD MAP — merged regions (topojson.merge approach)

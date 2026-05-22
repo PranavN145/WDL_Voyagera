@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India — Voyagera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="../css/india.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a class="nav-logo" href="../index.html">
+      <img src="../images/b_logo.png" alt="Voyagera" onerror="this.style.display='none'" />
+      <span>VOYAGERA</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="home.html"             class="nav-link">Home</a></li>
+      <li><a href="home.html#map-section" class="nav-link active">Explore</a></li>
+      <li><a href="about.html"                class="nav-link">About</a></li>
+      <li><a href="couchsurfing.html"         class="nav-link">CouchSurfing</a></li>
+      <li><a href="feedback.html"             class="nav-link">Feedback</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#map-section">Explore</a>
+    <a href="about.html">About</a>
+    <a href="couchsurfing.html">CouchSurfing</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+
+  <!-- ═══ HERO ═══ -->
+  <section class="ind-hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1800&q=80" alt="India" class="hero-bg-img" />
+      <div class="hero-bg-overlay ind-hero-overlay"></div>
+    </div>
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="ind-hero-inner">
+      <span class="sec-tag ind-anim-1">Country · South Asia</span>
+      <h1 class="ind-hero-title">INDIA</h1>
+      <p class="ind-hero-sub">Where chaos becomes poetry and every street holds a story with no end.</p>
+      <div class="ind-hero-ctas">
+        <button class="btn-primary" data-scroll="#ind-essence">
+          <span>Begin Exploring</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </button>
+        <button class="btn-ghost ind-ghost" data-scroll="#ind-guide">Backpacker Guide →</button>
+      </div>
+      <div class="ind-hero-meta">
+        <div class="ind-meta-item"><strong>🇮🇳</strong><span>South Asia</span></div>
+        <div class="ind-meta-sep"></div>
+        <div class="ind-meta-item"><strong>28</strong><span>States</span></div>
+        <div class="ind-meta-sep"></div>
+        <div class="ind-meta-item"><strong>∞</strong><span>Stories</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ═══ ESSENCE ═══ -->
+  <section id="ind-essence" class="section ind-essence-section">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Country Essence</span>
+      <h2 class="sec-title">Four Faces of India</h2>
+      <p class="sec-desc">Every corner of this country is a different world. Here are the four that stay with you.</p>
+    </div>
+    <div class="bp-grid">
+
+      <article class="vibe-card ind-static reveal rd1">
+        <img src="https://images.unsplash.com/photo-1663349355208-6d8981b30585?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spirituality" class="vc-img" loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🪔</div>
+          <h3 class="vc-name">Spirituality</h3>
+          <p class="vc-sub">Varanasi · Aarti · Sacred rivers</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+
+      <article class="vibe-card ind-static reveal rd2">
+        <img src="https://images.unsplash.com/photo-1695834195972-9fd5877b8ad0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Street Chaos" class="vc-img" loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🛺</div>
+          <h3 class="vc-name">Street Chaos</h3>
+          <p class="vc-sub">Old Delhi · Bazaars · Auto-rickshaws</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+
+      <article class="vibe-card ind-static reveal rd3">
+        <img src="https://images.unsplash.com/photo-1617380613434-7495e9b45dfb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wilderness" class="vc-img" loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🏔️</div>
+          <h3 class="vc-name">Wilderness</h3>
+          <p class="vc-sub">Himalayas · Tigers · Desert dunes</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+
+      <article class="vibe-card ind-static reveal rd4">
+        <img src="https://images.unsplash.com/photo-1772554699613-970ec79a2ad7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Colors" class="vc-img" loading="lazy" />
+        <div class="vc-overlay"></div>
+        <div class="vc-body">
+          <div class="vc-icon">🎨</div>
+          <h3 class="vc-name">Color & Culture</h3>
+          <p class="vc-sub">Holi · Classical dance · Festivals</p>
+        </div>
+        <div class="vc-shine"></div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ MUST EXPERIENCE ═══ -->
+  <section class="section ind-exp-section">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Must Experience</span>
+      <h2 class="sec-title">Before You Leave India</h2>
+      <p class="sec-desc">Three experiences that every traveler carries home — permanently.</p>
+    </div>
+    <div class="ind-exp-grid">
+
+      <article class="ind-exp-card reveal rd1">
+        <img src="https://images.unsplash.com/photo-1716573260891-23ad993e8833?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ganga Aarti" class="ind-exp-img" loading="lazy" />
+        <div class="ind-exp-overlay"></div>
+        <div class="ind-exp-body">
+          <span class="ind-exp-num">01</span>
+          <h3 class="ind-exp-title">Ganga Aarti, Varanasi</h3>
+          <p class="ind-exp-desc">Thousands of lamps, chanting priests, and the oldest living city on earth — at 5 AM, the Ganges becomes something beyond words.</p>
+        </div>
+      </article>
+
+      <article class="ind-exp-card reveal rd2">
+        <img src="https://images.unsplash.com/photo-1580442374555-3def8fb41738?q=80&w=1180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Overnight Train" class="ind-exp-img" loading="lazy" />
+        <div class="ind-exp-overlay"></div>
+        <div class="ind-exp-body">
+          <span class="ind-exp-num">02</span>
+          <h3 class="ind-exp-title">Overnight Train Journey</h3>
+          <p class="ind-exp-desc">A sleeper bunk, chai vendors at every stop, strangers who feed you and tell you their life story. India unfolds best at 80 km/h.</p>
+        </div>
+      </article>
+
+      <article class="ind-exp-card reveal rd3">
+        <img src="https://plus.unsplash.com/premium_photo-1697729438401-fcb4ff66d9a8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kerala Backwaters" class="ind-exp-img" loading="lazy" />
+        <div class="ind-exp-overlay"></div>
+        <div class="ind-exp-body">
+          <span class="ind-exp-num">03</span>
+          <h3 class="ind-exp-title">Kerala Backwaters</h3>
+          <p class="ind-exp-desc">A houseboat drifting through emerald canals, toddy coconuts, and silence so complete you hear your own breathing. The south hits differently.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ BACKPACKER GUIDE ═══ -->
+  <section id="ind-guide" class="section ind-guide-section">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Backpacker Guide</span>
+      <h2 class="sec-title">Real Talk. No Fluff.</h2>
+      <p class="sec-desc">Everything you actually need to know before landing in India.</p>
+    </div>
+    <div class="ind-guide-grid">
+
+      <div class="ind-stat-card reveal rd1">
+        <div class="ind-stat-icon">💰</div>
+        <div class="ind-stat-label">Daily Budget</div>
+        <div class="ind-stat-value">₹800 – 2,000</div>
+        <div class="ind-stat-sub">Hostel bed + street meals + local transport. ≈ $10–25/day</div>
+      </div>
+
+      <div class="ind-stat-card reveal rd2">
+        <div class="ind-stat-icon">🛡️</div>
+        <div class="ind-stat-label">Safety</div>
+        <div class="ind-stat-value">Stay Aware</div>
+        <div class="ind-stat-sub">Generally safe. Watch your bag in crowds. Trust your gut. Locals are your best security.</div>
+      </div>
+
+      <div class="ind-stat-card reveal rd3">
+        <div class="ind-stat-icon">🌤️</div>
+        <div class="ind-stat-label">Best Season</div>
+        <div class="ind-stat-value">Oct – March</div>
+        <div class="ind-stat-sub">Cool, dry, and festival-rich. Avoid May–June: extreme heat, especially in the north.</div>
+      </div>
+
+      <div class="ind-stat-card reveal rd4">
+        <div class="ind-stat-icon">🚂</div>
+        <div class="ind-stat-label">Transport</div>
+        <div class="ind-stat-value">Train First</div>
+        <div class="ind-stat-sub">Indian Railways connects everything. Book sleeper class. Auto-rickshaws for cities. Buses for mountains.</div>
+      </div>
+
+      <div class="ind-stat-card reveal rd5">
+        <div class="ind-stat-icon">🎒</div>
+        <div class="ind-stat-label">Backpacker Vibe</div>
+        <div class="ind-stat-value">Overwhelmingly Addictive</div>
+        <div class="ind-stat-sub">Loud, colorful, spiritual, exhausting, and unlike anywhere else. Most travelers stay twice as long as planned.</div>
+      </div>
+
+      <div class="ind-stat-card reveal rd6">
+        <div class="ind-stat-icon">📶</div>
+        <div class="ind-stat-label">Connectivity</div>
+        <div class="ind-stat-value">Excellent 4G</div>
+        <div class="ind-stat-sub">Jio or Airtel SIM at the airport. ₹300/month for unlimited data. Coverage everywhere except deep Himalayas.</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ LOCAL EXPERIENCES ═══ -->
+  <section class="section ind-local-section">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Local Moments</span>
+      <h2 class="sec-title">Skip the Guidebook</h2>
+      <p class="sec-desc">The real India is in the gaps between tourist attractions.</p>
+    </div>
+    <div class="ind-local-grid">
+
+      <article class="ind-local-card reveal rd1">
+        <div class="ind-local-img-wrap">
+          <img src="https://images.unsplash.com/photo-1683533699004-7f6b9e5a073f?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chai" loading="lazy" />
+          <div class="ind-local-overlay"></div>
+        </div>
+        <div class="ind-local-body">
+          <h4 class="ind-local-name">Chai with Strangers</h4>
+          <p class="ind-local-desc">Every roadside dhaba is a living room you were never invited to but always welcome in. Order chai. Stay for two hours.</p>
+        </div>
+      </article>
+
+      <article class="ind-local-card reveal rd2">
+        <div class="ind-local-img-wrap">
+          <img src="https://images.unsplash.com/photo-1722331715139-9849dfd6091d?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Market" loading="lazy" />
+          <div class="ind-local-overlay"></div>
+        </div>
+        <div class="ind-local-body">
+          <h4 class="ind-local-name">Morning at the Sabzi Mandi</h4>
+          <p class="ind-local-desc">At 6 AM the vegetable market is a shouting, color-soaked chaos. No tourists. Pure India.</p>
+        </div>
+      </article>
+
+      <article class="ind-local-card reveal rd3">
+        <div class="ind-local-img-wrap">
+          <img src="https://images.unsplash.com/photo-1769289071393-076ca2eea5a1?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Auto-rickshaw" loading="lazy" />
+          <div class="ind-local-overlay"></div>
+        </div>
+        <div class="ind-local-body">
+          <h4 class="ind-local-name">Auto-Rickshaw at Midnight</h4>
+          <p class="ind-local-desc">Wind in your face, city lights blurring past, a driver blasting Bollywood at full volume. This is how cities are felt, not seen.</p>
+        </div>
+      </article>
+
+      <article class="ind-local-card reveal rd4">
+        <div class="ind-local-img-wrap">
+          <img src="https://images.unsplash.com/photo-1753443279716-b2aaadb7e08f?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cricket" loading="lazy" />
+          <div class="ind-local-overlay"></div>
+        </div>
+        <div class="ind-local-body">
+          <h4 class="ind-local-name">Neighborhood Cricket</h4>
+          <p class="ind-local-desc">A taped-tennis ball, a gully between buildings, eleven strangers who will adopt you into their team on the spot.</p>
+        </div>
+      </article>
+
+      <article class="ind-local-card reveal rd5">
+        <div class="ind-local-img-wrap">
+          <img src="https://images.unsplash.com/photo-1639494095806-1680b909cb33?q=80&w=1203&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Railway platform" loading="lazy" />
+          <div class="ind-local-overlay"></div>
+        </div>
+        <div class="ind-local-body">
+          <h4 class="ind-local-name">Platform Life</h4>
+          <p class="ind-local-desc">India's railway platforms are civilizations of their own. Vendors, families, sadhus, students — everyone passes through these few square metres.</p>
+        </div>
+      </article>
+
+      <article class="ind-local-card reveal rd6">
+        <div class="ind-local-img-wrap">
+          <img src="https://images.unsplash.com/photo-1742281258189-3b933879867a?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thali" loading="lazy" />
+          <div class="ind-local-overlay"></div>
+        </div>
+        <div class="ind-local-body">
+          <h4 class="ind-local-name">Unlimited Thali Lunch</h4>
+          <p class="ind-local-desc">₹80. Unlimited refills. Dal, sabji, rice, roti, pickle, papad. The family-run dhabas never disappoint; the five-star restaurants always do.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ FOOD CULTURE ═══ -->
+  <section class="section ind-food-section">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Food Culture</span>
+      <h2 class="sec-title">Eat Like You Mean It</h2>
+      <p class="sec-desc">Indian food isn't a cuisine. It's 28 different cuisines fighting to be your favourite.</p>
+    </div>
+    <div class="ind-food-grid">
+
+      <article class="ind-food-card reveal rd1">
+        <div class="ind-food-img-wrap">
+          <img src="https://images.unsplash.com/photo-1760263051331-0e4d3dafc9ff?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pani Puri" loading="lazy" />
+        </div>
+        <div class="ind-food-body">
+          <h4 class="ind-food-name">Pani Puri</h4>
+          <p class="ind-food-desc">Six hollow shells of pure tamarind-spiced water. One explosion per bite. The only queue worth standing in.</p>
+          <div class="ind-food-meta">
+            <span class="ind-food-tag">Street Food</span>
+            <span class="ind-food-price">₹20–40</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ind-food-card reveal rd2">
+        <div class="ind-food-img-wrap">
+          <img src="https://images.unsplash.com/photo-1619581073186-5b4ae1b0caad?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Masala Chai" loading="lazy" />
+        </div>
+        <div class="ind-food-body">
+          <h4 class="ind-food-name">Masala Kullad Chai</h4>
+          <p class="ind-food-desc">Cardamom, ginger, milk, sugar, and a country's entire social life poured into a small clay cup. Drink six a day. Minimum.</p>
+          <div class="ind-food-meta">
+            <span class="ind-food-tag">Essential Ritual</span>
+            <span class="ind-food-price">₹10–20</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ind-food-card reveal rd3">
+        <div class="ind-food-img-wrap">
+          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Biryani" loading="lazy" />
+        </div>
+        <div class="ind-food-body">
+          <h4 class="ind-food-name">Dum Biryani</h4>
+          <p class="ind-food-desc">Slow-cooked over two hours, layered with spices that have no translation. The Hyderabadi vs Kolkata argument has no winner.</p>
+          <div class="ind-food-meta">
+            <span class="ind-food-tag">Regional Icon</span>
+            <span class="ind-food-price">₹150–350</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ind-food-card reveal rd4">
+        <div class="ind-food-img-wrap">
+          <img src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thali" loading="lazy" />
+        </div>
+        <div class="ind-food-body">
+          <h4 class="ind-food-name">South Indian Thali</h4>
+          <p class="ind-food-desc">A banana leaf, seven dishes, unlimited rice, coconut chutney, and sambar so good you'll forget every restaurant you've ever been to.</p>
+          <div class="ind-food-meta">
+            <span class="ind-food-tag">Full Meal</span>
+            <span class="ind-food-price">₹80–200</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ HIDDEN SPOTS ═══ -->
+  <section class="section ind-hidden-section">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Off the Map</span>
+      <h2 class="sec-title">Places the Guidebooks Miss</h2>
+      <p class="sec-desc">The India that most tourists never reach. The India that backpackers never stop talking about.</p>
+    </div>
+    <div class="ind-hidden-grid">
+
+      <article class="ind-hidden-card reveal rd1">
+        <div class="ind-hidden-img-wrap">
+          <img src="https://plus.unsplash.com/premium_photo-1697730337612-8bd916249e30?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hampi" loading="lazy" />
+          <div class="ind-hidden-overlay"></div>
+          <span class="ind-hidden-badge">Hidden Gem</span>
+        </div>
+        <div class="ind-hidden-body">
+          <h3 class="ind-hidden-name">Hampi, Karnataka</h3>
+          <p class="ind-hidden-desc">Ancient Vijayanagara Empire ruins scattered between surreal granite boulders. Rent a bicycle. Get lost for three days. Guest houses cost less than a pizza.</p>
+          <div class="cc-tags">
+            <span>Ruins</span><span>Boulders</span><span>₹400/night</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ind-hidden-card reveal rd2">
+        <div class="ind-hidden-img-wrap">
+          <img src="https://images.unsplash.com/photo-1698753935121-153a106616d5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spiti Valley" loading="lazy" />
+          <div class="ind-hidden-overlay"></div>
+          <span class="ind-hidden-badge">Hidden Gem</span>
+        </div>
+        <div class="ind-hidden-body">
+          <h3 class="ind-hidden-name">Spiti Valley, Himachal</h3>
+          <p class="ind-hidden-desc">4,000 metres above sea level. Buddhist monasteries older than the concept of tourism. Zero mobile signal. Silence so complete it becomes a sound.</p>
+          <div class="cc-tags">
+            <span>High Altitude</span><span>Buddhist</span><span>Off-Grid</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ind-hidden-card reveal rd3">
+        <div class="ind-hidden-img-wrap">
+          <img src="https://images.unsplash.com/photo-1617467053978-276d9d4d5d11?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gokarna" loading="lazy" />
+          <div class="ind-hidden-overlay"></div>
+          <span class="ind-hidden-badge">Hidden Gem</span>
+        </div>
+        <div class="ind-hidden-body">
+          <h3 class="ind-hidden-name">Gokarna, Karnataka</h3>
+          <p class="ind-hidden-desc">Goa's quieter, more spiritual sibling. Cliffside temples, hammock shacks, a beach you share with maybe twelve people. The way coastal India used to be.</p>
+          <div class="cc-tags">
+            <span>Beach</span><span>Temples</span><span>Hippie Vibe</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ FINAL CTA ═══ -->
+  <section class="ind-cta-section">
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="ind-cta-inner reveal">
+      <span class="ind-cta-eyebrow">The Journey Awaits</span>
+      <h2 class="ind-cta-title">
+        Some countries fill your passport.<br>
+        India fills something else entirely.
+      </h2>
+      <a href="asia.html" class="btn-primary ind-cta-btn">
+        <span>Continue Exploring</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../images/b_logo.png" alt="" onerror="this.style.display='none'" />
+        <span>VOYAGERA</span>
+      </div>
+      <p class="footer-copy">VOYAGERA &copy; 2026 — Discover the world differently</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    'use strict';
+    // Navbar
+    const _nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => _nav.classList.toggle('scrolled', window.scrollY > 40), {passive:true});
+    // Hamburger
+    const _btn = document.getElementById('hamburger'), _menu = document.getElementById('mobileMenu');
+    _btn.addEventListener('click', () => { const o = _menu.classList.toggle('open'); _btn.setAttribute('aria-expanded', String(o)); });
+    _menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => _menu.classList.remove('open')));
+    // Reveal
+    const _io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); _io.unobserve(e.target); } }), { threshold: 0.10 });
+    document.querySelectorAll('.reveal').forEach(el => _io.observe(el));
+    // Scroll buttons
+    document.querySelectorAll('[data-scroll]').forEach(el => el.addEventListener('click', e => {
+      e.preventDefault();
+      const t = document.querySelector(el.dataset.scroll);
+      if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 68, behavior: 'smooth' });
+    }));
+  </script>
+
+</body>
+</html>
