@@ -570,6 +570,10 @@ button { cursor: pointer; border: none; background: none; }
   transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
 }
 
+.vibe-link {
+  display: block;
+}
+
 /* Real image fills */
 .vc-img {
   position: absolute;

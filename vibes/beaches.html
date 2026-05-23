@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beach Backpacker Destinations - Voyagera</title>
+  <link rel="stylesheet" href="../css/vibes.css">
+</head>
+<body>
+
+  <!-- Change data-vibe attribute matching keys inside vibesData.js to populate context dynamically -->
+  <main id="vibe-context-wrapper" data-vibe="beaches">
+    
+    <header class="vibe-hero">
+      <div class="hero-content">
+        <a href="../index.html" class="btn-back">← Back to Hub</a>
+        <div><span class="hero-badge">BACKPACKER PATH</span></div>
+        <h1 id="vibe-title">Beach Escapes</h1>
+        <p id="vibe-desc">Tropical islands, coastal hostels, nightlife, and ocean adventures for backpackers.</p>
+      </div>
+    </header>
+
+    <section class="vibe-container">
+      <div class="destinations-grid" id="destinations-container">
+        <!-- Rendered Programmatically via engine script injection below -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Load internal dataset architecture first followed by layout rendering compilation layer -->
+  <script src="../javascript/vibesData.js"></script>
+  <script src="../javascript/vibesEngine.js"></script>
+</body>
+</html>
