@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500&display=swap');
+
+:root {
+  --bg: #07090f;
+  --bg2: #0b0e18;
+  --surface: #111827;
+  --border: rgba(255,255,255,0.08);
+
+  --cyan: #00c8ff;
+  --blue: #2a7fff;
+
+  --text: #e9ecf3;
+  --text2: #94a3b8;
+
+  --ff-display: 'Bebas Neue', sans-serif;
+  --ff-cond: 'Barlow Condensed', sans-serif;
+  --ff-body: 'Barlow', sans-serif;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--ff-body);
+}
+
+/* HERO */
+
+.vibe-hero{
+  position: relative;
+  height: 60vh;
+
+  background:
+    linear-gradient(to bottom,
+    rgba(7,9,15,0.4),
+    rgba(7,9,15,0.95)),
+    url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80');
+
+  background-size: cover;
+  background-position: center;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  padding:40px;
+}
+
+.hero-content{
+  max-width:800px;
+}
+
+.btn-back{
+  display:inline-block;
+  margin-bottom:20px;
+
+  color:var(--cyan);
+  text-decoration:none;
+
+  font-family:var(--ff-cond);
+  letter-spacing:0.1em;
+}
+
+.hero-badge{
+  display:inline-block;
+
+  background:rgba(255,255,255,0.1);
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  padding:6px 14px;
+
+  border-radius:999px;
+
+  font-size:0.75rem;
+  letter-spacing:0.15em;
+
+  margin-bottom:20px;
+}
+
+.hero-content h1{
+  font-family:var(--ff-display);
+
+  font-size:clamp(3rem,8vw,6rem);
+
+  letter-spacing:0.05em;
+
+  margin-bottom:10px;
+}
+
+.hero-content p{
+  color:var(--text2);
+
+  font-size:1.05rem;
+
+  line-height:1.7;
+}
+
+/* MAIN */
+
+.vibe-container{
+  max-width:1300px;
+
+  margin:auto;
+
+  padding:60px 5vw;
+}
+
+.destinations-grid{
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+  gap:28px;
+}
+
+/* CARD */
+
+.dest-card{
+  background:rgba(255,255,255,0.03);
+
+  border:1px solid var(--border);
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+  transition:0.35s ease;
+
+  backdrop-filter:blur(10px);
+}
+
+.dest-card:hover{
+  transform:translateY(-8px);
+
+  border-color:rgba(0,200,255,0.3);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.5),
+    0 0 30px rgba(0,200,255,0.08);
+}
+
+.img-wrapper{
+  position:relative;
+
+  height:240px;
+
+  overflow:hidden;
+}
+
+.img-wrapper img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+  transition:0.5s ease;
+}
+
+.dest-card:hover img{
+  transform:scale(1.08);
+}
+
+.card-budget{
+  position:absolute;
+
+  bottom:15px;
+  left:15px;
+
+  background:rgba(0,0,0,0.75);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  padding:8px 14px;
+
+  border-radius:999px;
+
+  font-weight:700;
+
+  font-size:0.85rem;
+}
+
+.card-body{
+  padding:22px;
+}
+
+.card-body h3{
+  font-family:var(--ff-cond);
+
+  font-size:1.6rem;
+
+  letter-spacing:0.05em;
+
+  margin-bottom:10px;
+}
+
+.card-meta{
+  color:var(--cyan);
+
+  font-size:0.85rem;
+
+  margin-bottom:14px;
+}
+
+.card-desc{
+  color:var(--text2);
+
+  line-height:1.7;
+
+  margin-bottom:18px;
+}
+
+/* TAGS */
+
+.card-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.tag{
+  background:rgba(255,255,255,0.06);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  padding:6px 12px;
+
+  border-radius:999px;
+
+  font-size:0.75rem;
+
+  color:var(--text2);
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  .vibe-hero{
+    height:auto;
+    padding:100px 20px;
+  }
+
+  .destinations-grid{
+    grid-template-columns:1fr;
+  }
+
+}
