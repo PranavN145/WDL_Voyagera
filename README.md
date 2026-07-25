@@ -61,8 +61,8 @@ VOYAGERA is a travel website designed for backpackers and explorers who want to 
 
 ## 👨‍💻 Authors
 - **Pranav Narkhede**
-- Rishabh Prabhu
-- Ameya Chaudhari
+- **Rishabh Prabhu**
+- **Ameya Chaudhari**
 
 ---
 
